@@ -1,0 +1,328 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 12, 2017, 6:16:51 PM
+    Author     : PASINDHU
+*/
+/*header*/
+html,body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    background: #FFf;
+}
+body a{
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transitin:0.5s all;
+}
+body h1,h2,h3,h4,h5,h6{
+    font-family: 'Asap', sans-serif;
+}
+#home{
+    background: url(../images/header-bg.jpg) no-repeat center top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size:cover;
+    min-height: 650px;
+    opacity: 0.75;
+    padding: 1px 0;
+}
+.div{
+    display: block;
+}
+#banner{
+ margin-top: 6em;
+ margin-left: 4em;
+ margin-right: 4em;
+ margin-bottom: 4em;
+ height:auto;
+ z-index: -1;
+ color: #fff;
+ text-align: justify;
+ background-color: #000;
+ opacity: 0.8;
+ padding-bottom: 1em;
+ padding-left: 1em;
+ padding-right: 1em;
+ padding-top: 1em;
+}
+
+#banner h3{
+    text-align: center;
+    font-size: 2em;
+}
+
+.top-header{
+    padding: 2em 0;
+}
+.logo h1{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+.logo h1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.logo{
+    float: left;
+}
+.navigation-right{
+    float: right;
+}
+.navigation-right ul li{
+    display: inline-block;
+}
+.navigation-right ul li a{
+    color: #fff;
+    font-size:1em;
+    text-decoration: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-family: 'Open Sans',sans-serif;
+}
+.navigation-right ul li.active a{
+    color: #00a78e;
+}
+/*--nav-hover--*/
+.link-effect-3 a{
+    padding: 10px 0;
+    margin: 0 12px;
+    color: #797878;
+    text-shadow: none;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+.link-effect-3 a::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 10px 0;
+    max-width: 0;
+    border-bottom: 3px solid #00a78e;
+    color: #00a78e;
+    content: attr(data-hover);
+    -webkit-transition: max-width 0.5s;
+    -moz-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+}
+.link-effect-3 a:hover::before{
+    max-width: 100%;
+}
+/*endhearder*/
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    font-weight:normal;
+    font-size: 28px;
+    
+}
+.facts th{
+    text-transform: uppercase;
+    text-align: center;
+}
+.facts td{
+    text-align: left;
+    height: 5px;
+    padding: 15px;
+    vertical-align: top;
+}
+.facts td:hover{
+    background-color: #f5f5f5;
+}
+.read-more-state{
+    display: none;
+}
+.read-more-target{
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+.read-more-state:checked~ .read-more-wrap .read-more-target{
+    opacity: 1;
+    font-size: inherit;
+    max-height: 9em;
+}
+.read-more-state~ .read-more-trigger:before{
+    content: 'show more';
+
+}
+.read-more-state:checked~ .read-more-trigger:before{
+    content:'show less';
+    color: #00a780;
+}
+.read-more-trigger{
+    align-content: left;
+    cursor: pointer;
+    padding: 10px 9px;
+    color: #000;
+}
+.read-more-trigger:hover{
+    overflow: hidden;
+    padding: 10px 0;
+    max-width: 0;
+    border-bottom: 3px solid #00a78e;
+    color: #00a78e;
+}
+
+.listOfDino{
+    background-color: #1b242f;
+    padding: 5em 0;
+    color: #fff;
+}
+
+.listOfDino h2{
+    color: #fff;
+}
+
+.listOfDino div{
+    display: block;
+}
+
+.listTable{
+    border-collapse: collapse;
+    width: 95%;
+    border :1px solid #ddd;
+}
+.listTable th{
+    padding: 8px;
+    text-align: center;
+    border :1px solid #ddd;
+}
+.listTable td{
+     padding: 8px;
+    vertical-align: center;
+     border-bottom: 1px solid #ddd;
+    border :1px solid #ddd;
+}
+.listTable td a{
+    color: #fff;
+    text-align: center;
+}
+.geologic{
+    background: url(../images/header-bg1.jpg) no-repeat center top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+    -ms-background-size:cover;
+    min-height: 650px;
+    padding: 5em 0;
+    position: relative;
+}
+.geologic div{
+    text-align: center;
+    
+}
+.geologic h2{
+    color: #ooo;
+}
+.geologic p{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    color: #01afa1;
+    font-size: 16px;
+}
+
+.geologic h4{
+    text-align: left;
+    padding: 8px;
+    font-size:21px;
+    color: #FFF;
+}
+
+.ban{
+ margin-top: 5em;
+ margin-left: 4em;
+ margin-right: 4em;
+ margin-bottom: 4em;
+ height:auto;
+ z-index: -1;
+ color: #fff;
+ text-align: justify;
+ background-color: #000;
+ opacity: 0.70;
+ padding-bottom: 1em;
+ padding-left: 1em;
+ padding-right: 1em;
+ padding-top: 1em;
+}
+
+.facts{
+    background-color: #918f64;
+    padding: 5em 0;
+
+}
+
+.footer {
+    background: url(../images/header-bg2.jpg) no-repeat center top;
+    background-size: 100% 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+    -ms-background-size:cover;
+    min-height: 650px;
+    padding: 5em 0;
+}
+.footer div p{
+    text-align: left;
+    padding-left:5px;
+    padding-right: 5px;
+    padding-bottom: 6px;
+    color: #5ca857;
+}
+
+.copy{
+    text-align: center;
+    color: #fff;
+    font-size: 0.9em;
+    line-height: 1.9em;
+    margin: 1em 0;
+}
+
+.copy span{
+    color: #00a78e;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 14px;
+	right: 2%;
+	overflow: hidden;
+	width: 32px;
+	height: 32px;
+	border: none;
+	text-indent: 100%;
+	background: url("../images/movetop.png") no-repeat 0px 0px;
+}
+
+#toTopHover {
+	width: 32px;
+	height: 32px;
+	display: block;
+	overflow: hidden;
+	float: right;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+}
